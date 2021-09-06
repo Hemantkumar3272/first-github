@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+</head>
+<body>
+    <button onclick="newElement();">click here</button>
+    <div> I am div Tag</div> 
+    <script>
+    function newElement(){
+    var div = document.getElementsByTagName('div'),
+        p = document.createElement("p");
+    p.innerHTML = 'I am p Tag';
+    div[0].append(p);
+    }
+    </script>
+</body>
+</html>
